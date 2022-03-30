@@ -5,13 +5,13 @@ const SiteNav = () => {
 
 
   return (
-    <nav className="navigation background-is-dark" style={{backgroundColor:"black"}}>
+    <nav className="navigation " style={{backgroundColor:"#f5f5f5"}}> 
     <div className="container">
     <div className="wrapper">
       <div className="left">
         <a className="brand" href="/" >
           <Image 
-              src="/static/img/logo.png"
+              src="/static/img/yamuna.png"
               alt="nothing"
               width="150px"
               height="84px"
@@ -20,18 +20,18 @@ const SiteNav = () => {
       </div>
       <div className="right">
       <ul className="nav navigation-links animate">
-        <li><a href="/" className="scroll">Home</a></li>
+        <li><a href="/" className="scroll siteNav__item" >Home</a></li>
         <li>
-            <a  href="/#about" className="scroll">Overview</a>
+            <a  href="/#about" className="scroll siteNav__item" >Overview</a>
         </li>
         <li>
-            <a href="/gallery" className="scroll">Gallery</a>
+            <a href="/gallery" className="scroll siteNav__item">Gallery</a>
         </li>
         <li>
-            <a  href="/posts" className="scroll">Villas</a>
+            <a  href="/posts" className="scroll siteNav__item">Villas</a>
         </li>
         <li>
-          <a href="/contact"className="scroll">Contact</a>
+          <a href="/contact" className="scroll siteNav__item">Contact</a>
         </li>
       </ul>
       <div className="nav-btn">

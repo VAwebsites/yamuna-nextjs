@@ -123,3 +123,14 @@ text-transform: capitalize;
   list-style: none;
 }
 
+.siteNav__item {
+  color:black;
+}
+
+@media (max-width: 767px) {
+  .siteNav__item {
+    color:white;
+  }
+}
+
+

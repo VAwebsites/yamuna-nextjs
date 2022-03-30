@@ -10,11 +10,11 @@ const Footer = () => {
     window.open('https://instagram.com/yamuna_asha_city?utm_medium=copy_link', '_blank');
   }
   return (
-    <footer id="page-footer" className="block background-is-dark">
+    <footer id="page-footer" className="block background-is-dark" style={{backgroundColor:"#454545"}}>
     <div className="container">
     <Link href="/" >
       <a className="brand">
-        <Image src="/static/img/logo.png" width="150px" height="100%" alt="" />
+        <Image src="/static/img/yamuna.png" width="150px" height="80%" alt="" />
       </a>
     </Link>
       <div className="row">
@@ -28,13 +28,28 @@ const Footer = () => {
           Historic Beach City of Mangalore.
 
        <div style={{marginTop:"1em"}}>
-         <ActionIcon onClick={onFacebookClick} size="xl"  style={{display:'inline', marginRight:"1em"}}>
+       <Image 
+       onClick={onFacebookClick}
+              src="/static/img/facebook 2.png"
+              alt="nothing"
+              width="35px"
+              height="35px"
+          />
+          <Image 
+          onClick={onInstagramClick}
+              src="/static/img/instagram 2.png"
+              alt="nothing"
+              width="35px"
+              height="35px"  
+          />
+
+         {/* <ActionIcon onClick={onFacebookClick} size="xl"   style={{display:'inline', marginRight:"1em"}}>
           <IoLogoFacebook  style={{fontSize:"2.5em"}}  />
-         </ActionIcon>
-      <ActionIcon size="xl" onClick={onInstagramClick}   style={{display:'inline'}}>
+         </ActionIcon> */}
+      {/* <ActionIcon size="xl" onClick={onInstagramClick}   style={{display:'inline'}}>
       <IoLogoInstagram style={{fontSize:"2.5em"}} />
 
-      </ActionIcon>
+      </ActionIcon> */}
 
        </div>
         </div>
