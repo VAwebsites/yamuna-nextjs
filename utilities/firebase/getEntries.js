@@ -1,28 +1,33 @@
-import { collection, getDocs, orderBy, query, where} from "firebase/firestore"; 
+import { collection, getDocs, orderBy, query, where, limit, doc, getDoc} from "firebase/firestore"; 
 import {db} from './firebase';
 
 export const firebaseGetAllPosts = async()=>{
-    console.log("Stared get");
-    const entriesRef = collection(db, "posts");
-    const querySnapshot = await getDocs(query(entriesRef,orderBy("date", "desc")));
+    const entriesRef = collection(db, "villas");
+    const querySnapshot = await getDocs(entriesRef);
     const myEntries = [];
     querySnapshot.forEach((doc) => {
         myEntries.push({id: doc.id, ...doc.data()});
     });
-    console.log(myEntries);
     return myEntries;
 }
 
-export const getSingleEntry = async(slug)=>{
-    console.log("sindei single entry: ",slug);
-    const result = query(collection(db,"posts"), where("slug", "==", slug));
-    const querySnapshot = await getDocs(result);
-    const myArray = [];
+export const firebasePostsForHome = async()=>{
+    const entriesRef = collection(db, "villas");
+    const querySnapshot = await getDocs(entriesRef);
+    const myEntries = [];
     querySnapshot.forEach((doc) => {
-        myArray.push({id: doc.id, ...doc.data()});
+        myEntries.push({id: doc.id, ...doc.data()});
     });
-    if(myArray.length > 0)
-        return myArray[0]
-    else
+    return myEntries;
+}
+
+export const getSingleEntry = async(id)=>{
+    const docRef = doc(db,"villas", id);
+    const docSnap = await getDoc(docRef);
+
+    if(docSnap.exists()){
+        return {id: docSnap.id, ...docSnap.data()}
+    }else{
         return null;
+    }
 }

@@ -1,12 +1,22 @@
 import Image from "next/image";
-
+import Link from "next/link";
+import { IoLogoFacebook, IoLogoInstagram} from  "react-icons/io5";
+import { ActionIcon } from "@mantine/core";
 const Footer = () => {
+  const onFacebookClick = ()=>{
+    window.open('https://www.facebook.com/profile.php?id=100057574204399', '_blank');
+  }
+  const onInstagramClick = ()=>{
+    window.open('https://instagram.com/yamuna_asha_city?utm_medium=copy_link', '_blank');
+  }
   return (
     <footer id="page-footer" className="block background-is-dark">
     <div className="container">
-    <a href="#" className="brand">
+    <Link href="/" >
+      <a className="brand">
         <Image src="/static/img/logo.png" width="150px" height="100%" alt="" />
       </a>
+    </Link>
       <div className="row">
         <div className="col-md-4 col-sm-12">
         
@@ -17,8 +27,16 @@ const Footer = () => {
           creating an expectional new community in the 
           Historic Beach City of Mangalore.
 
+       <div style={{marginTop:"1em"}}>
+         <ActionIcon onClick={onFacebookClick} size="xl"  style={{display:'inline', marginRight:"1em"}}>
+          <IoLogoFacebook  style={{fontSize:"2.5em"}}  />
+         </ActionIcon>
+      <ActionIcon size="xl" onClick={onInstagramClick}   style={{display:'inline'}}>
+      <IoLogoInstagram style={{fontSize:"2.5em"}} />
 
-          
+      </ActionIcon>
+
+       </div>
         </div>
         <div className="col-md-4 col-sm-12">
          
@@ -35,8 +53,8 @@ const Footer = () => {
             </figure>
 
             <figure style={{marginTop:"1em"}}> <i  style={{color:"#E67F10"}} className="fa fa-phone"></i> +91-9741735307, +91-9448912515</figure>
-            <figure style={{marginTop:"1em"}}> <i style={{color:"#E67F10"}} className="fa fa-envelope-o"></i> <a href="mailto:info@vajrarealties.com"
-                >info@vajrarealties.com</a
+            <figure style={{marginTop:"1em"}}> <i style={{color:"#E67F10"}} className="fa fa-envelope-o"></i> <a href="mailto:sales@vajrarealties.com"
+                >sales@vajrarealties.com</a
               ></figure>
            
           </div>

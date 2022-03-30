@@ -4,10 +4,10 @@ import { firebaseGetAllPosts } from '../../../utilities/firebase/getEntries';
 
 const Posts = (props) => {
    const posts = JSON.parse(props.posts);
+   
   return (  
     <AdminLayout page="posts">
        <PostsIndex posts={posts} />
-
     </AdminLayout>
   )
 }
@@ -21,7 +21,6 @@ export async function getServerSideProps (context){
                 status:true
             }
         }
-
     }
     else{
         return {

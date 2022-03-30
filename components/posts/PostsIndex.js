@@ -15,26 +15,18 @@ const PostsIndex = ({posts}) => {
     }
   return (
       <>
-      <Grid align="center">
-          <Grid.Col span={1}>
-          <h2>Posts</h2>
-          </Grid.Col>
-          <Grid.Col span={1}>
-            <Button onClick={createPostHandler} color="grape">Create Post</Button>
-            </Grid.Col>
-            <Grid.Col span={10}>
-
-            </Grid.Col>
-      </Grid>
+      <h2 style={{margin:"0 1em 0 0", display:"inline"}}>Villas</h2>
+      <Button onClick={createPostHandler} color="grape">Create New Villa</Button>
+     
       <div className=''>
       </div>
        <Table highlightOnHover>
             <thead>
                 <tr>
-                    <th>Post Title</th>
-                    <th>Creation Date</th>
-                    <th>Body</th>
-                    <th>Actions</th>
+                    <th>BHK</th>
+                    <th>Sq Feet</th>
+                    <th>Land Size</th>
+                    <th>Price</th>
                 </tr>
             </thead>
             <tbody>
