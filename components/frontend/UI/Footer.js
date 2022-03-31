@@ -27,15 +27,15 @@ const Footer = () => {
           creating an expectional new community in the 
           Historic Beach City of Mangalore.
 
-       <div style={{marginTop:"1em"}}>
-       <Image 
+       <div style={{marginTop:"1em", display:"flex", gap:"20px"}}>
+       <img 
        onClick={onFacebookClick}
               src="/static/img/facebook 2.png"
               alt="nothing"
               width="35px"
               height="35px"
           />
-          <Image 
+          <img 
           onClick={onInstagramClick}
               src="/static/img/instagram 2.png"
               alt="nothing"

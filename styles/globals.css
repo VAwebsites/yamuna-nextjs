@@ -125,6 +125,7 @@ text-transform: capitalize;
 
 .siteNav__item {
   color:black;
+
 }
 
 @media (max-width: 767px) {
@@ -151,4 +152,5 @@ text-transform: capitalize;
 .my-float{
   margin-top:16px;
 }
+
 
