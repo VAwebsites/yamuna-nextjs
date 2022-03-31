@@ -22,7 +22,11 @@ const NearByPlace = () => {
                         </div>
                         
                     </a>
-                    <span className='gallery-image-text'>SURATHKAL RAILWAY STATION <span>4KM</span></span>
+                    <span className='gallery-image-text'> </span>
+                        <h4>RAILWAY STATION</h4>
+                        <span>SURATHKAL,</span>
+                         <span> 4KM</span>
+                         {/* <h5>SURATHKAL</h5> */}
                 </div>
 
                 <div>
@@ -31,7 +35,10 @@ const NearByPlace = () => {
                             <img src="/static/img/near_place/airport.jpg" alt=""/>
                         </div>
                     </a>
-                    <span className='gallery-image-text'>MANGALORE INTERNATIONAL AIRPORT <span>12KM</span></span>
+                    <span className='gallery-image-text'></span>
+                       <h4>MANGALORE INTERNATIONAL </h4> 
+                        <span>AIRPORT, 12KM</span>
+                        {/* <h6>12KM</h6> */}
                 </div>
                 <div>
                     <a href="/static/img/near_place/ryaninternationalschool.jpg" className="gallery-item image-popup">
@@ -39,7 +46,9 @@ const NearByPlace = () => {
                             <img src="/static/img/near_place/ryaninternationalschool.jpg" alt=""/>
                         </div>
                     </a>
-                    <span className='gallery-image-text'>RYAN INTERNATIONAL SCHOOL <span>0.5KM</span></span>
+                    <span className='gallery-image-text'></span>
+                       <h4>RYAN INTERNATIONAL</h4> 
+                      <span>SCHOOL, 0.5KM</span>
                 </div>
                 <div>
                     <a href="/static/img/near_place/panambur.jpg" className="gallery-item image-popup">
@@ -47,7 +56,9 @@ const NearByPlace = () => {
                             <img src="/static/img/near_place/panambur.jpg" alt=""/>
                         </div>
                     </a>
-                    <span className='gallery-image-text'>PANAMBUR BEACH <span>2KM</span></span> 
+                    <span className='gallery-image-text'></span> 
+                    <h4>PANAMBUR BEACH</h4>
+                    <span>2KM</span>
                 </div>
                 <div>
                     <a href="/static/img/near_place/nitk.jpg" className="gallery-item image-popup">
@@ -55,7 +66,9 @@ const NearByPlace = () => {
                             <img src="/static/img/near_place/nitk.jpg" alt=""/>
                         </div>
                     </a>
-                    <span className='gallery-image-text'>NATIONAL INSTITUTE OF TECHNOLOGY KARNATAKA <span>4KM</span></span> 
+                    <span className='gallery-image-text'></span> 
+                    <h4>NATIONAL INSTITUTE OF </h4>
+                     TECHNOLOGY KARNATAKA,<span> 4KM</span>
                 </div>
                 <div>
                     <a href="/static/img/near_place/mrpl.jpg" className="gallery-item image-popup">
@@ -63,7 +76,9 @@ const NearByPlace = () => {
                             <img src="/static/img/near_place/mrpl.jpg" alt=""/>
                         </div>
                     </a>
-                    <span className='gallery-image-text'>MRPL <span>6KM</span></span> 
+                    <span className='gallery-image-text'></span> 
+                    <h4>MRPL </h4>
+                    <span>6KM</span>
                 </div>
             </SimpleGrid>         
             </div>
