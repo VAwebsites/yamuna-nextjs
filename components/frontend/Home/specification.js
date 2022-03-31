@@ -8,9 +8,13 @@ const Specification = () => {
   return (
     <div className="block background-is-dark" id="about" style={{backgroundColor:"#2f3542"}}>
     <div className="container" id="pricing">
-        <h2>Specifications</h2>
-        <div className="row">
-            <div className="col-md-6 col-sm-6" data-scroll-reveal="enter left and move 20px" style={{margin:"auto"}}>
+        <h2 style={{fontSize:'42px'}}>Specifications</h2>
+        <div style={{display:"flex", justifyContent:"center", alignItems:"center",gap:"50px"}}>
+                <div>
+                        <img src="/static/img/specification.jpeg" style={{borderRadius:"1.3em"}}/>
+                  </div>
+
+            <div data-scroll-reveal="enter left and move 20px" style={{margin:"auto"}}>
                 <ul style={{fontWeight:"600",fontSize:"1.3em",fontFamily:'Montserrat'}}>
                   <li>24-hour security with cctv surveillance.</li>
                   <li>Centralized sewage treatment plant (stp).</li>

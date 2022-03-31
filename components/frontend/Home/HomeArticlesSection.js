@@ -30,7 +30,7 @@ const HomeArticlesSection = (props) => {
                     <h3>{villa.sqfeet} Sq.Feet</h3>
                     <h3>{villa.landSize} Land Size</h3>
                     <Button n sx={(theme)=>({
-                backgroundColor: '#e67f10',
+                backgroundColor: '#f4bc1c',
                 '&:hover':{
                   backgroundColor: theme.colors.orange[7]
                 }
@@ -49,7 +49,7 @@ const HomeArticlesSection = (props) => {
           <a
             href="/posts"  
             className="btn btn-rounded  btn-primary" 
-            style={{backgroundColor:"#e67f10", fontSize:'1.3em', border:0, padding:"0.5em 1em"}}
+            style={{backgroundColor:"#f4bc1c", fontSize:'1.3em', border:0, padding:"0.8em 1.3em"}}
           >View More</a>
         </div> }
     </div>
