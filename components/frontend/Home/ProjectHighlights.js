@@ -1,12 +1,12 @@
 import Image from 'next/image'
-import {SimpleGrid} from '@mantine/core';
+
 
 const ProjectHighlights = () => {
    
   return (
     <div className="block" id="about" style={{width:"75%", margin:'auto'}} >
         <div className="container">
-	        <h2 className='text-center'>Project <span style={{color:"#9F292B"}}>Highlight</span></h2>
+	        <h2 className='text-center'>Project <span style={{color:"#f4bc1c"}}>Highlight</span></h2>
             <div className="row">
                 <div className="col-md-12 col-sm-12">
                     <p>Yamuna Asha City by Yamuna Homes & Design Pvt. Ltd.The first of
@@ -34,7 +34,7 @@ const ProjectHighlights = () => {
                         <p><strong>Project Status:</strong> On-going</p><br />
                         
                         <p>
-                          <h3 className='mb-0 pb-0'>Builder:</h3>
+                          <h4 className='mb-0 pb-0'><strong>Builder:</strong></h4>
                         Yamuna Homes & Design Pvt. Ltd.<br />
                         
                         NH 66, Kulai, Near Raheja waterfront apartment, Mangaluru, Karnataka 575019</p>
@@ -45,58 +45,7 @@ const ProjectHighlights = () => {
 	  </div>
 
 
-        <div className="container col-md-12 text-center">
-        <h3>Approved Banks</h3>
-        <SimpleGrid cols={4} spacing="xs"    breakpoints={[
-        { maxWidth: 980, cols: 3, spacing: 'md' },
-        { maxWidth: 755, cols: 2, spacing: 'sm' },
-        { maxWidth: 600, cols: 2, spacing: 'sm' },
-      ]}> 
-                  <div className="logo">
-                <a href="#">
-                    <Image width="250px" height="140px" src="/static/img/bank/Karnataka bank.jpg" alt="Karnataka Bank" />
-                </a>
-            </div>
-
-            <div className="logo">
-                <a href="#">            
-                    <Image width="250px" height="140px" src="/static/img/bank/Canara Bank.jpg" alt="Canara Bank" />
-                </a>
-            </div>
-            <div className="logo">
-                <a href="#">
-                    <Image width="250px" height="140px" src="/static/img/bank/Corporation bank.jpg" alt="Corporation Bank" />
-                </a>
-            </div>
-            <div className="logo">
-                <a href="#">
-                    <Image width="250px" height="140px" src="/static/img/bank/Punjab national bank.jpg" alt="Punjab national Bank" />
-                </a>
-            </div>
-            <div className="logo">
-                <a href="#">
-                    <Image width="250px" height="140px" src="/static/img/bank/Hdfc Bank.jpg" alt="Hdfc Bank" />
-                </a>
-            </div>
-            <div className="logo">
-                    <a href="#">
-                        <Image width="250px" height="140px" src="/static/img/bank/Axis Bank Logo.jpg" alt="Axis Bank" />
-                    </a>
-            </div>
-          
-            <div className="logo">
-                <a href="#">
-                    <Image width="250px" height="140px" src="/static/img/bank/state bank of india.jpg" alt="state bank of india" />
-                </a>
-            </div>
-            <div className="logo">
-                <a href="#">
-                    <Image width="250px" height="140px" src="/static/img/bank/Union bank.jpg" alt="Union Bank" />
-                </a>
-            </div>
-    </SimpleGrid>
-
-        </div>
+       
   </div>
  
   )

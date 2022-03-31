@@ -13,6 +13,8 @@ import dynamic from "next/dynamic";
 const SiteScripts = dynamic(()=> import('./scripts'), {ssr:false});
 import { useEffect } from 'react';
 import Head from 'next/head';
+import Clubhouse from '../components/frontend/Home/Clubhouse';
+import Banks from '../components/frontend/Home/Banks';
 const x = 0;
 
 export default function Home(props) {
@@ -24,13 +26,16 @@ export default function Home(props) {
   return (
     <FrontLayout>
     
-      <FeaturedVideo />
       <ProjectHighlights />
+      <Clubhouse/>
+      <Specification />
       <HomeArticlesSection posts={posts} />
       <Amenities />
-      <Specification />
       <HomeGallery images={images} />
+      <Banks/>
       <NearByPlace />
+      <FeaturedVideo />
+
     </FrontLayout>
   )
 }

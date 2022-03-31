@@ -1,17 +1,13 @@
-import { Button } from '@mantine/core'
 import React from 'react'
 
-const Specification = () => {
-  const downloadFile = () => {
-    window.location.href = "/static/files/Brochure.pdf"
-  }
+const Clubhouse = () => {
   return (
-    <div className="block background-is-dark" id="about" style={{backgroundColor:"#2f3542"}}>
+    <div className="block" id="about" style={{backgroundColor:"#f4bc1c"}}>
     <div className="container" id="pricing">
-        <h2>Specifications</h2>
+        <h2>ClubHouse</h2>
         <div className="row">
             <div className="col-md-6 col-sm-6" data-scroll-reveal="enter left and move 20px" style={{margin:"auto"}}>
-                <ul style={{fontWeight:"600",fontSize:"1.3em",fontFamily:'Montserrat'}}>
+                <ul style={{fontWeight:"600",fontSize:"1.3em"}}>
                   <li>24-hour security with cctv surveillance.</li>
                   <li>Centralized sewage treatment plant (stp).</li>
                   <li>Club house with Gym, Badminton court, swimming pool & with other indoor games.</li>
@@ -28,10 +24,7 @@ const Specification = () => {
                 {/* <Button color={"red"} onClick={downloadFile}>
                   <i style={{marginRight:"0.5em"}} className="fa fa-download"></i> Download Brochure
                 </Button> */}
-             </div> 
-             <div>
-                
-             </div>
+            </div> 
            
         </div>
         
@@ -46,4 +39,4 @@ const Specification = () => {
   )
 }
 
-export default Specification
+export default Clubhouse
