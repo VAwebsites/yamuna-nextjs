@@ -12,19 +12,6 @@ export const firebaseCreateSetting = async(setting)=>{
     }
 }
 
-// export const firebaseUpdateSetting = async(id, post)=>{
-//     const snippet = generateSnippet(post.body);
-//     const slug = generateSlug(post.title);
-
-//     const finalPost = {
-//         ...post,
-//         snippet,
-//         slug
-//     }
-
-//     await setDoc(doc(db, "villas", id), finalPost);
-//     return 1;
-// }
 export const firebaseGetSetting = async(key)=>{
     const settingsRef = doc(db, "settings","website");
     const docSnap = await getDoc(settingsRef);
@@ -39,7 +26,18 @@ export const firebaseGetSetting = async(key)=>{
             case "COMPANY_ADDRESS": return settingsObj.COMPANY_ADDRESS;
             case "BROCHURE_LINK": return settingsObj.BROCHURE_LINK;
         }
+        return "INVALID_KEY";
+    }else{
+        return null;
+    }
+}
 
+export const firebaseGetAllSettings = async()=>{
+    const settingsRef = doc(db, "settings","website");
+    const docSnap = await getDoc(settingsRef);
+
+    if(docSnap.exists()){
+      return docSnap.data();
     }else{
         return null;
     }

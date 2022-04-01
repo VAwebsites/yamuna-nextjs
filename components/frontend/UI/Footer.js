@@ -27,15 +27,15 @@ const Footer = () => {
           creating an expectional new community in the 
           Historic Beach City of Mangalore.
 
-       <div style={{marginTop:"1em"}}>
-       <Image 
+       <div style={{marginTop:"1em", display:"flex", gap:"20px"}}>
+       <img 
        onClick={onFacebookClick}
               src="/static/img/facebook 2.png"
               alt="nothing"
               width="35px"
               height="35px"
           />
-          <Image 
+          <img 
           onClick={onInstagramClick}
               src="/static/img/instagram 2.png"
               alt="nothing"
@@ -78,11 +78,16 @@ const Footer = () => {
       <hr />
       <div className="note">	&#169; 2022 All Rights Reserved</div>
       
-      <div className="to-top">
+      {/* <div className="to-top">
         <a href="#page-top" className="arrow-up framed scroll">
           <i className="arrow_up"></i>
+        
         </a>
-      </div>
+      </div> */}
+      {
+      <a href="https://api.whatsapp.com/send?phone=919741735307" class="float" target="_blank">
+					<i class="fa fa-whatsapp my-float"></i>
+					</a>}
     </div>
     <div className="background-wrapper">
       <div className="bg-transfer opacity-30">
