@@ -4,10 +4,10 @@ import { IoLogoFacebook, IoLogoInstagram} from  "react-icons/io5";
 import { ActionIcon } from "@mantine/core";
 const Footer = () => {
   const onFacebookClick = ()=>{
-    window.open('https://www.facebook.com/profile.php?id=100057574204399', '_blank');
+    window.open('https://www.facebook.com/profile.php?id=100057574204399', '_blank','noopener');
   }
   const onInstagramClick = ()=>{
-    window.open('https://instagram.com/yamuna_asha_city?utm_medium=copy_link', '_blank');
+    window.open('https://instagram.com/yamuna_asha_city?utm_medium=copy_link', '_blank','noopener');
   }
   return (
     <footer id="page-footer" className="block background-is-dark" style={{backgroundColor:"#454545"}}>
@@ -85,9 +85,9 @@ const Footer = () => {
         </a>
       </div> */}
       {
-      <a href="https://api.whatsapp.com/send?phone=919741735307" class="float" target="_blank">
-					<i class="fa fa-whatsapp my-float"></i>
-					</a>}
+      <a href="https://api.whatsapp.com/send?phone=919741735307" className="float" target="_blank" rel="noreferrer">
+					<i className="fa fa-whatsapp my-float"></i>
+      </a>}
     </div>
     <div className="background-wrapper">
       <div className="bg-transfer opacity-30">
