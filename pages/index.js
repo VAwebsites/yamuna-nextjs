@@ -1,6 +1,7 @@
 import FrontLayout from '../components/layout/FrontLayout'
 import { firebaseGetGalleryImagesForHome } from '../utilities/firebase/gallery';
 import { firebasePostsForHome } from '../utilities/firebase/getEntries';
+import {getBanks,getGalleryImages,getHomepageSettings,getVillas} from '../utilities/api';
 import Amenities from '../components/frontend/Home/Amenities';
 import FeaturedVideo from '../components/frontend/Home/FeaturedVideo'
 import HomeArticlesSection from '../components/frontend/Home/HomeArticlesSection'
@@ -20,21 +21,24 @@ const x = 0;
 export default function Home(props) {
   const posts = JSON.parse(props.posts);
   const images = JSON.parse(props.images);
+  const settings = JSON.parse(props.settings);
+  const villas = JSON.parse(props.villas);
+  const banks = JSON.parse(props.banks);
 
   
 
   return (
-    <FrontLayout>
+    <FrontLayout settings={settings}>
     
-      <ProjectHighlights />
+      <ProjectHighlights settings={settings}/>
       <Clubhouse/>
       <Specification />
-      <HomeArticlesSection posts={posts} />
+      <HomeArticlesSection villas={villas} />
       <Amenities />
       <HomeGallery images={images} />
       <Banks/>
       <NearByPlace />
-      <FeaturedVideo />
+      <FeaturedVideo settings={settings} />
 
     </FrontLayout>
   )
@@ -42,12 +46,28 @@ export default function Home(props) {
 
 export async function getServerSideProps (context){
   const res = await firebasePostsForHome();
-  const resImages = await firebaseGetGalleryImagesForHome();
+  const resImages = await getGalleryImages();
+  const settings = await getHomepageSettings();
+  const villas = await getVillas();
+  const banks = await getBanks();
+
   const props = {
     posts:[],
     status:false,
-    images:[]
+    images:[],
+    settings:[],
+    villas:[],
+    banks:[]
   };
+  if(villas){
+    props.villas = JSON.stringify(villas);
+  }
+  if(banks){
+    props.banks = JSON.stringify(banks);
+  }
+  if(settings){
+    props.settings = JSON.stringify(settings.data[0]);
+  }
   if(res){
       const posts = JSON.stringify(res);
       props.posts = posts;

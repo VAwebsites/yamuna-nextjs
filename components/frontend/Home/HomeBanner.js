@@ -1,19 +1,33 @@
 import Image from "next/image";
 import { Button } from "@mantine/core";
-const HomeBanner = () => {
+const HomeBanner = (props) => {
+  let x = 0;
+  function changeImage(x) {
+    var img = document.getElementById("homepage-banner");
+    img.style.backgroundImage = props.settings.banners[x];
+    console.log(x);
+    x++;        
+    if(x >= props.settings.banners.length) {
+        x = 0;
+    } 
+    setTimeout("changeImage(x)", 30000);
+}
+
+// changeImage(x)
+
   return (
     <div className="hero-section background-is-dark" id="homepage-banner">
       <div className="wrapper">
         <div className="hero-title">
           <div className="container">
             <h1 className="animate">
-              Yamuna Asha City:
+            {props.settings.project_location}  
               <br />
-              Residential Gated Community Layout
+             {props.settings.project_title}
             </h1>
             <p  className="animate">
                   Rera Number:<br />
-                  PRM/KA/RERA/1257/334/PR/190913/002849
+                  {props.settings.rera_number}
               </p>
               <Button sx={(theme)=>({
                 backgroundColor: '#9F292B',
@@ -40,7 +54,7 @@ const HomeBanner = () => {
         <div className="hero-slide">
           <div className="bg-transfer">
             <Image
-              src="/static/img/hero-image.jpg"
+              src="/static/img/slide-05.jpg"
               width="100%"
               height="100%"
               alt=""

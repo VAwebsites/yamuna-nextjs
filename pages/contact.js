@@ -1,7 +1,12 @@
 import { Grid, TextInput, Textarea, Button } from '@mantine/core';
 import WebLayout  from '../components/layout/WebLayout';
 import  {useRef} from 'react';
-const Contact = () => {
+
+import {getHomepageSettings} from '../utilities/api';
+
+const Contact = (props) => {
+    
+    const settings  =  JSON.parse(props.settings);
     const nameInputRef =  useRef();
     const emailInputRef =  useRef();
     const messageInputRef =  useRef();
@@ -35,7 +40,7 @@ const Contact = () => {
         }
     }   
   return (
-      <WebLayout>
+      <WebLayout settings={settings}>
         <div style={{ width:"80%", margin:"100px auto"}}>
        <div className='text-center' style={{marginBottom:"3em", fontWeight:"bold"}}>
         <h2 style={{color:'#9F292B', margin:"0.5em"}}>Contact Us</h2>
@@ -96,5 +101,24 @@ const Contact = () => {
       </WebLayout>
   )
 }
+
+
+export async function getServerSideProps (context){
+  const settings = await getHomepageSettings();
+
+    const props = {
+        images:[],
+        settings:[],
+      };
+      
+      if(settings){
+        props.settings = JSON.stringify(settings.data[0]);
+      }
+      return {
+        props
+      }
+}
+  
+
 
 export default Contact

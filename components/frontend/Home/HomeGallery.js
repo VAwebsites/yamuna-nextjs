@@ -10,20 +10,20 @@ const HomeGallery = (props) => {
     if(!propImages){
       propImages = [];
     }
-    useEffect(()=>{
-        propImages.forEach(image => {
-          localGetImageUrl(image);
-        })
-      },[propImages]);
+    // useEffect(()=>{
+    //     propImages.forEach(image => {
+    //       localGetImageUrl(image);
+    //     })
+    //   },[propImages]);
     
-      const localGetImageUrl = (image)=>{
-        getImageUrl(image._location.path_)
-        .then(
-          urlObj =>{
-            setImages((prevImages)=> prevImages.concat(urlObj));
-          })
-        .catch(err=> console.log("There was an error inside usestate: ",err));
-      }
+    //   const localGetImageUrl = (image)=>{
+    //     getImageUrl(image.img_path)
+    //     .then(
+    //       urlObj =>{
+    //         setImages((prevImages)=> prevImages.concat(urlObj));
+    //       })
+    //     .catch(err=> console.log("There was an error inside usestate: ",err));
+    //   }
 
       
   return (
@@ -35,9 +35,9 @@ const HomeGallery = (props) => {
         { maxWidth: 755, cols: 2, spacing: 'sm' },
         { maxWidth: 600, cols: 2, spacing: 'sm' },
       ]}>
-            {images.map((image, index)=>(
+            {props.images.map((image, index)=>(
             <div key={index}>
-                <Image src={image.url} width={400} height={400} alt="gallery image"   objectFit='cover' />
+                <Image src={image.img_path} width={400} height={400} alt="gallery image"   objectFit='cover' />
              </div>
             ))}
            

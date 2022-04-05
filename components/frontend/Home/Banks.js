@@ -19,42 +19,6 @@ const Banks = () => {
                         </a>
                     </div>
 
-                    <div className="logo">
-                        <a href="#">            
-                            <Image width="250px" height="140px" src="/static/img/bank/Canara Bank.jpg" alt="Canara Bank" />
-                        </a>
-                    </div>
-                    <div className="logo">
-                        <a href="#">
-                            <Image width="250px" height="140px" src="/static/img/bank/Corporation bank.jpg" alt="Corporation Bank" />
-                        </a>
-                    </div>
-                    <div className="logo">
-                        <a href="#">
-                            <Image width="250px" height="140px" src="/static/img/bank/Punjab national bank.jpg" alt="Punjab national Bank" />
-                        </a>
-                    </div>
-                    <div className="logo">
-                        <a href="#">
-                            <Image width="250px" height="140px" src="/static/img/bank/Hdfc Bank.jpg" alt="Hdfc Bank" />
-                        </a>
-                    </div>
-                    <div className="logo">
-                            <a href="#">
-                                <Image width="250px" height="140px" src="/static/img/bank/Axis Bank Logo.jpg" alt="Axis Bank" />
-                            </a>
-                    </div>
-                
-                    <div className="logo">
-                        <a href="#">
-                            <Image width="250px" height="140px" src="/static/img/bank/state bank of india.jpg" alt="state bank of india" />
-                        </a>
-                    </div>
-                    <div className="logo">
-                        <a href="#">
-                            <Image width="250px" height="140px" src="/static/img/bank/Union bank.jpg" alt="Union Bank" />
-                        </a>
-                    </div>
             </SimpleGrid>
 
         </div>
