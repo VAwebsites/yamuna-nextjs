@@ -19,7 +19,7 @@ import Banks from '../components/frontend/Home/Banks';
 const x = 0;
 
 export default function Home(props) {
-  const posts = JSON.parse(props.posts);
+  // const posts = JSON.parse(props.posts);
   const images = JSON.parse(props.images);
   const settings = JSON.parse(props.settings);
   const villas = JSON.parse(props.villas);
@@ -52,7 +52,7 @@ export async function getServerSideProps (context){
   const banks = await getBanks();
 
   const props = {
-    posts:[],
+    // posts:[],
     status:false,
     images:[],
     settings:[],
@@ -68,11 +68,11 @@ export async function getServerSideProps (context){
   if(settings){
     props.settings = JSON.stringify(settings.data[0]);
   }
-  if(res){
-      const posts = JSON.stringify(res);
-      props.posts = posts;
-      props.status = true;
-  }
+  // if(res){
+  //     const posts = JSON.stringify(res);
+  //     props.posts = posts;
+  //     props.status = true;
+  // }
   if(resImages){
     const images = JSON.stringify(resImages);
     props.images = images;

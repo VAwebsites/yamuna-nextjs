@@ -8,7 +8,7 @@ const HomeBanner = (props) => {
   
   const [x, setX] = useState(0);
   function changeImage() {
-    if (!document.hidden){
+    
         let temp = x
             temp++;
         if(temp >= props.settings.banners.length) {
@@ -16,16 +16,16 @@ const HomeBanner = (props) => {
         }else{
           setX(temp)   
         }
-      }
+      
     // setTimeout(changeImage(x,images), 3000);
   }
   
  
-// useEffect(() => {
-
+useEffect(() => {
+  if (!document.hidden){
       setInterval(changeImage, 3000); 
-
-//  });
+  }
+ });
 
   return (
     <div className="hero-section background-is-dark" id="homepage-banner" style={{backgroundImage: "url(" + props.settings.banners[x].banner + ")"}}>
