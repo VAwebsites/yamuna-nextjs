@@ -1,22 +1,34 @@
 import Image from "next/image";
 import { Button } from "@mantine/core";
-const HomeBanner = (props) => {
-  let x = 0;
-  function changeImage(x) {
-    var img = document.getElementById("homepage-banner");
-    img.style.backgroundImage = props.settings.banners[x];
-    console.log(x);
-    x++;        
-    if(x >= props.settings.banners.length) {
-        x = 0;
-    } 
-    setTimeout("changeImage(x)", 30000);
-}
+import { useState, useEffect } from 'react';
 
-// changeImage(x)
+
+const HomeBanner = (props) => {
+
+  
+  const [x, setX] = useState(0);
+  function changeImage() {
+    if (!document.hidden){
+        let temp = x
+            temp++;
+        if(temp >= props.settings.banners.length) {
+            setX(0)
+        }else{
+          setX(temp)   
+        }
+      }
+    // setTimeout(changeImage(x,images), 3000);
+  }
+  
+ 
+// useEffect(() => {
+
+      setInterval(changeImage, 3000); 
+
+//  });
 
   return (
-    <div className="hero-section background-is-dark" id="homepage-banner">
+    <div className="hero-section background-is-dark" id="homepage-banner" style={{backgroundImage: "url(" + props.settings.banners[x].banner + ")"}}>
       <div className="wrapper">
         <div className="hero-title">
           <div className="container">

@@ -45,7 +45,7 @@ export default function Home(props) {
 }
 
 export async function getServerSideProps (context){
-  const res = await firebasePostsForHome();
+  // const res = await firebasePostsForHome();
   const resImages = await getGalleryImages();
   const settings = await getHomepageSettings();
   const villas = await getVillas();

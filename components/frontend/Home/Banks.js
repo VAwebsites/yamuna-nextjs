@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import {SimpleGrid} from '@mantine/core';
 
-const Banks = () => {
+const Banks = (props) => {
   return (
     <div className="block" id="gallery">
 
@@ -13,11 +13,19 @@ const Banks = () => {
                 { maxWidth: 755, cols: 2, spacing: 'sm' },
                 { maxWidth: 600, cols: 2, spacing: 'sm' },                                        
                 ]}> 
-                        <div className="logo">
-                        <a href="#">
-                            <Image width="250px" height="140px" src="/static/img/bank/Karnataka bank.jpg" alt="Karnataka Bank" />
+                       
+                        {props.settings.approved_banks.map((bank, index) => {
+                return (
+                    <div className="logo">
+                        <a >
+                        <Image width="250px" height="140px" src={bank.logo} alt={bank.name} />
                         </a>
                     </div>
+                )
+            })}
+
+                          
+                        
 
             </SimpleGrid>
 
