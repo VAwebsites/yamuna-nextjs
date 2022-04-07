@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['firebasestorage.googleapis.com','yamunaashacity.com','127.0.0.1'],
+    domains: ['firebasestorage.googleapis.com','yamunaashacity.com','127.0.0.1','admin.yamunaashacity.com'],
   },
   eslint: {
     // Warning: This allows production builds to successfully complete even if
