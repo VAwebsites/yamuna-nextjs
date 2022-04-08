@@ -16,7 +16,7 @@ const Banks = (props) => {
                        
                         {props.settings.approved_banks.map((bank, index) => {
                 return (
-                    <div className="logo">
+                    <div className="logo"  key={index}>
                         <a >
                         <Image width="250px" height="140px" src={bank.logo} alt={bank.name} />
                         </a>
