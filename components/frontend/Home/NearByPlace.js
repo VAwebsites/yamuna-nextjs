@@ -16,9 +16,9 @@ const NearByPlace = () => {
                 ]}
             >
                 <div>
-                    <a href="/static/img/near_place/surathkal.jpg" className="gallery-item image-popup">
+                    <a href="/img/near_place/surathkal.jpg" className="gallery-item image-popup">
                         <div className="image bg-transfer">
-                            <img src="/static/img/near_place/surathkal.jpg" alt=""/>
+                            <img src="/img/near_place/surathkal.jpg" alt=""/>
                         </div>
                         
                     </a>
@@ -30,9 +30,9 @@ const NearByPlace = () => {
                 </div>
 
                 <div>
-                    <a href="/static/img/near_place/airport.jpg" className="gallery-item image-popup">
+                    <a href="/img/near_place/airport.jpg" className="gallery-item image-popup">
                         <div className="image bg-transfer">
-                            <img src="/static/img/near_place/airport.jpg" alt=""/>
+                            <img src="/img/near_place/airport.jpg" alt=""/>
                         </div>
                     </a>
                     <span className='gallery-image-text'></span>
@@ -41,9 +41,9 @@ const NearByPlace = () => {
                         {/* <h6>12KM</h6> */}
                 </div>
                 <div>
-                    <a href="/static/img/near_place/ryaninternationalschool.jpg" className="gallery-item image-popup">
+                    <a href="/img/near_place/ryaninternationalschool.jpg" className="gallery-item image-popup">
                         <div className="image bg-transfer">
-                            <img src="/static/img/near_place/ryaninternationalschool.jpg" alt=""/>
+                            <img src="/img/near_place/ryaninternationalschool.jpg" alt=""/>
                         </div>
                     </a>
                     <span className='gallery-image-text'></span>
@@ -51,9 +51,9 @@ const NearByPlace = () => {
                       <span>SCHOOL, 0.5KM</span>
                 </div>
                 <div>
-                    <a href="/static/img/near_place/panambur.jpg" className="gallery-item image-popup">
+                    <a href="/img/near_place/panambur.jpg" className="gallery-item image-popup">
                         <div className="image bg-transfer">
-                            <img src="/static/img/near_place/panambur.jpg" alt=""/>
+                            <img src="/img/near_place/panambur.jpg" alt=""/>
                         </div>
                     </a>
                     <span className='gallery-image-text'></span> 
@@ -61,9 +61,9 @@ const NearByPlace = () => {
                     <span>2KM</span>
                 </div>
                 <div>
-                    <a href="/static/img/near_place/nitk.jpg" className="gallery-item image-popup">
+                    <a href="/img/near_place/nitk.jpg" className="gallery-item image-popup">
                         <div className="image bg-transfer">
-                            <img src="/static/img/near_place/nitk.jpg" alt=""/>
+                            <img src="/img/near_place/nitk.jpg" alt=""/>
                         </div>
                     </a>
                     <span className='gallery-image-text'></span> 
@@ -71,9 +71,9 @@ const NearByPlace = () => {
                      TECHNOLOGY KARNATAKA,<span> 4KM</span>
                 </div>
                 <div>
-                    <a href="/static/img/near_place/mrpl.jpg" className="gallery-item image-popup">
+                    <a href="/img/near_place/mrpl.jpg" className="gallery-item image-popup">
                         <div className="image bg-transfer">
-                            <img src="/static/img/near_place/mrpl.jpg" alt=""/>
+                            <img src="/img/near_place/mrpl.jpg" alt=""/>
                         </div>
                     </a>
                     <span className='gallery-image-text'></span> 

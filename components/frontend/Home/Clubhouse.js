@@ -15,7 +15,7 @@ const Clubhouse = () => {
                         </Button> */}
                   </div> 
                   <div className="col-md-6 col-sm-6">
-                        <img src="/static/img/clubhouse.jpeg" style={{borderRadius:"1.3em"}}/>
+                        <img src="/img/clubhouse.jpeg" style={{borderRadius:"1.3em"}}/>
                   </div>
               
             </div>

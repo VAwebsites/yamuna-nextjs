@@ -3,7 +3,7 @@ import React from 'react'
 
 const Specification = () => {
   const downloadFile = () => {
-    window.location.href = "/static/files/Brochure.pdf"
+    window.location.href = "/files/Brochure.pdf"
   }
   return (
     <div className="block background-is-dark" id="about" style={{backgroundColor:"#2f3542"}}>
@@ -11,7 +11,7 @@ const Specification = () => {
         <h2 style={{fontSize:'42px'}}>Specifications</h2>
         <div style={{display:"flex", justifyContent:"center", alignItems:"center",gap:"50px"}}>
                 <div>
-                        <img src="/static/img/specification.jpeg" style={{borderRadius:"1.3em"}}/>
+                        <img src="/img/specification.jpeg" style={{borderRadius:"1.3em"}}/>
                   </div>
 
             <div data-scroll-reveal="enter left and move 20px" style={{margin:"auto"}}>

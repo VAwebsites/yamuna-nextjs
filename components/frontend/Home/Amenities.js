@@ -15,7 +15,7 @@ const Amenities = () => {
       ]}>
           <div className="amenitiesImage">
             <Image
-              src="/static/img/amenities/002-car-parking.svg"
+              src="/img/amenities/002-car-parking.svg"
               width="40px"
               height="100%"
               alt="car parking"
@@ -25,7 +25,7 @@ const Amenities = () => {
           </div>
           <div className="amenitiesImage">
             <Image
-              src="/static/img/amenities/003-cctv-cameras.svg"
+              src="/img/amenities/003-cctv-cameras.svg"
               width="40px"
               height="100%"
               alt="CCTV Cameras"
@@ -35,7 +35,7 @@ const Amenities = () => {
           </div>
           <div className="amenitiesImage">
             <Image
-              src="/static/img/amenities/004-club-house.svg"
+              src="/img/amenities/004-club-house.svg"
               width="40px"
               height="100%"
               alt="Club House"
@@ -45,7 +45,7 @@ const Amenities = () => {
           </div>
           <div className="amenitiesImage">
             <Image
-              src="/static/img/amenities/005-drainage-and-sewage-treatment.svg"
+              src="/img/amenities/005-drainage-and-sewage-treatment.svg"
               width="40px"
               height="100%"
               alt="Club House"
@@ -55,7 +55,7 @@ const Amenities = () => {
           </div>
           <div className="amenitiesImage">
             <Image
-              src="/static/img/amenities/006-fire-safety.svg"
+              src="/img/amenities/006-fire-safety.svg"
               width="40px"
               height="100%"
               alt="Fire Saftey"
@@ -65,7 +65,7 @@ const Amenities = () => {
           </div>
           <div className="amenitiesImage">
             <Image
-              src="/static/img/amenities/007-intercom.svg"
+              src="/img/amenities/007-intercom.svg"
               width="40px"
               height="100%"
               alt="Intercom"
@@ -75,7 +75,7 @@ const Amenities = () => {
           </div>
           <div className="amenitiesImage">
             <Image
-              src="/static/img/amenities/009-play-area.svg"
+              src="/img/amenities/009-play-area.svg"
               width="40px"
               height="100%"
               alt="Play Area"
@@ -85,7 +85,7 @@ const Amenities = () => {
           </div>
           <div className="amenitiesImage">
           <Image
-              src="/static/img/amenities/010-security.svg"
+              src="/img/amenities/010-security.svg"
               width="40px"
               height="100%"
               alt="Security"
@@ -95,7 +95,7 @@ const Amenities = () => {
           </div>
           <div className="amenitiesImage">
           <Image
-              src="/static/img/amenities/011-indoor-games.svg"
+              src="/img/amenities/011-indoor-games.svg"
               width="40px"
               height="100%"
               alt="Indoor Games"
@@ -105,7 +105,7 @@ const Amenities = () => {
           </div>
           <div className="amenitiesImage">
           <Image
-              src="/static/img/amenities/013-gymnasium.svg"
+              src="/img/amenities/013-gymnasium.svg"
               width="40px"
               height="100%"
               alt="Gymnasium"
