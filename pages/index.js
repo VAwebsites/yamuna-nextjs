@@ -36,7 +36,7 @@ export default function Home(props) {
       <HomeArticlesSection villas={villas} />
       <Amenities />
       <HomeGallery images={images} />
-      <Banks/>
+      <Banks settings={settings}/>
       <NearByPlace />
       <FeaturedVideo settings={settings} />
 
