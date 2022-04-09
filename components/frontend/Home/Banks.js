@@ -14,7 +14,7 @@ const Banks = (props) => {
                 { maxWidth: 600, cols: 2, spacing: 'sm' },                                        
                 ]}> 
                        
-                        {props.settings.approved_banks.map((bank, index) => {
+                        {props.settings ? props.settings.approved_banks.map((bank, index) => {
                 return (
                     <div className="logo"  key={index}>
                         <a >
@@ -22,7 +22,7 @@ const Banks = (props) => {
                         </a>
                     </div>
                 )
-            })}
+            }) : ''}
 
                           
                         
