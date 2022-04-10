@@ -33,9 +33,9 @@ useEffect(() => {
         <div className="hero-title">
           <div className="container">
             <h1 className="animate">
-            {props.settings.project_location}  
+            {props.settings.project_title}
               <br />
-             {props.settings.project_title}
+              {props.settings.project_location}  
             </h1>
             <p  className="animate">
                   Rera Number:<br />

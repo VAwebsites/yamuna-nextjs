@@ -31,7 +31,7 @@ const GalleryImage = ({image, onDeleteClicked}) => {
 
   return (
     <div onMouseEnter={()=>setShowOptions(true)} onMouseLeave={()=>setShowOptions(false)}>
-        <Image  src={image.url}layout="intrinsic" width={250} height={250} alt="uploaded"  />
+        <Image  src={image.url} layout="intrinsic" width={250} height={250} alt="uploaded"  />
         {showOptions && <div style={{position: 'relative',zIndex: 100, bottom: "50px", textAlign: "center"}}>
             <Button style={{marginRight:"0.5em"}} onClick={()=>setShowModal(true)}>
                 View
