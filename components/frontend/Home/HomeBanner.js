@@ -23,7 +23,7 @@ const HomeBanner = (props) => {
  
 useEffect(() => {
   if (!document.hidden){
-      setInterval(changeImage, 3000); 
+      setInterval(changeImage, 5000); 
   }
  });
 
