@@ -6,11 +6,11 @@ import Head from 'next/head';
 import HomeArticlesSection from '../../components/frontend/Home/HomeArticlesSection';
 
 
-import {getHomepageSettings} from '../../utilities/api';
+import {getHomepageSettings,getVillas} from '../../utilities/api';
 
 
 const Posts = (props) => {
-    const posts = JSON.parse(props.posts);
+  const villas = JSON.parse(props.villas);
     const settings  =  JSON.parse(props.settings);
 
   return (
@@ -18,7 +18,7 @@ const Posts = (props) => {
 
         <div className="block" id="features" style={{marginTop:"3em"}}>
             <div className="container m-auto">
-                <HomeArticlesSection posts={posts} allPage={true} />
+                <HomeArticlesSection villas={villas} allPage={true} />
             </div>
         </div>
       </WebLayout>
@@ -29,10 +29,10 @@ const Posts = (props) => {
 
 export async function getServerSideProps (context){
     const settings = await getHomepageSettings();
-    const res = await firebaseGetAllPosts();
+    const villas = await getVillas();
 
       const props = {
-           posts:null,
+          villas:[],
           status:false,
           settings:[],
         };
@@ -40,8 +40,8 @@ export async function getServerSideProps (context){
         if(settings){
           props.settings = JSON.stringify(settings.data[0]);
         }
-        if (res) {
-            props.posts = JSON.stringify(res);    
+        if(villas){
+          props.villas = JSON.stringify(villas);
         }
         
         return {
