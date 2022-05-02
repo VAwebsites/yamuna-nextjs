@@ -2,7 +2,7 @@ import React from 'react'
 
 const Clubhouse = () => {
   return (
-    <div className="block" id="about" style={{backgroundColor:"#f4bc1c"}}>
+    <div className="block" id="about" style={{backgroundColor:"#6E7474"}}>
       <div className="container" id="pricing">
            
             <div className="row">
