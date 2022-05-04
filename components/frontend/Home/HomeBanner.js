@@ -21,11 +21,11 @@ const HomeBanner = (props) => {
   }
   
  
-useEffect(() => {
-  if (!document.hidden){
-      setInterval(changeImage, 5000); 
-  }
- });
+// useEffect(() => {
+//   if (!document.hidden){
+//       setInterval(changeImage, 5000); 
+//   }
+//  });
 
   return (
     <div className="hero-section background-is-dark" id="homepage-banner" style={{backgroundImage: "url(" + props.settings.banners[x].banner + ")"}}>

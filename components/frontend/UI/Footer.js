@@ -10,7 +10,7 @@ const Footer = (props) => {
     window.open('https://instagram.com/yamuna_asha_city?utm_medium=copy_link', '_blank','noopener');
   }
   return (
-    <footer id="page-footer" className="block background-is-dark" style={{backgroundColor:"#454545"}}>
+    <footer id="page-footer" className="block background-is-dark" style={{backgroundColor:"#4D5138"}}>
     <div className="container">
     <Link href="/" >
       <a className="brand">

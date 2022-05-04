@@ -6,7 +6,7 @@ const Specification = () => {
     window.location.href = "/files/Brochure.pdf"
   }
   return (
-    <div className="block background-is-dark" id="about" style={{backgroundColor:"#2f3542"}}>
+    <div className="block background-is-dark" id="about" style={{backgroundColor:"#BFB6A5"}}>
     <div className="container" id="pricing">
         <h2 style={{fontSize:'42px'}}>Specifications</h2>
         <div style={{display:"flex", justifyContent:"center", alignItems:"center",gap:"50px"}}>
