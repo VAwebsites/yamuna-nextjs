@@ -13,8 +13,8 @@ const Footer = (props) => {
     <footer id="page-footer" className="block background-is-dark" style={{backgroundColor:"#4D5138"}}>
     <div className="container">
     <Link href="/" >
-      <a className="brand">
-        <Image src={props.settings.logo} width="150px" height="80%" alt="" />
+      <a className="brand p-2">
+        <Image className="footer-logo p-1" src={props.settings.logo} width="150px" height="80%" alt="" />
       </a>
     </Link>
       <div className="row">

@@ -153,4 +153,10 @@ text-transform: capitalize;
   margin-top:16px;
 }
 
+.footer-logo{
 
+  background-color: white;
+}
+img.footer-logo.p-1 {
+  padding: 2px;
+}
