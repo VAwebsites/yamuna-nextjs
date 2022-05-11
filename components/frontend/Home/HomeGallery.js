@@ -19,13 +19,7 @@ const HomeGallery = (props) => {
     //   },[propImages]);
     
     //   const localGetImageUrl = (image)=>{
-    //     getImageUrl(image.img_path)
-    //     .then(
-    //       urlObj =>{
-    //         setImages((prevImages)=> prevImages.concat(urlObj));
-    //       })
-    //     .catch(err=> console.log("There was an error inside usestate: ",err));
-    //   }
+    //     getImageUrl(image.img_path) 
 
       
   return (
