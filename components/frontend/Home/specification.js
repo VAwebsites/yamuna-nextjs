@@ -12,7 +12,7 @@ const Specification = () => {
         <div style={{display:"flex", justifyContent:"center", alignItems:"center",gap:"50px"}}>
                 <div>
                         <img src="/img/specification.jpeg" style={{borderRadius:"1.3em"}}/>
-                  </div>
+                  </div> </div>
 
             <div data-scroll-reveal="enter left and move 20px" style={{margin:"auto"}}>
                 <ul style={{fontWeight:"600",fontSize:"1.3em",fontFamily:'Montserrat'}}>
@@ -20,12 +20,12 @@ const Specification = () => {
                   <li>Centralized sewage treatment plant (stp).</li>
                   <li>Club house with Gym, Badminton court, swimming pool & with other indoor games.</li>
                   <li>Street light.</li>
-                  <li>Undergroung  electricity cables with individual service trench for each site.</li>
+                  <li>Underground  electricity cables with individual service trench for each site.</li>
                   <li>Children’s play area.</li>
                   <li>Informal playground with basketball & tennis courts.</li>
                   <li>Fully landscaped waterfront developed with jogging & bicycle tracks.</li>
                   <li>Green park with seating and other comforts.</li>
-                  <li>Wide asphalt  roads of imternational standards with beautiful street scape and storm water drains.</li>
+                  <li>Wide asphalt  roads of international standards with beautiful street scape and storm water drains.</li>
                   <li>24-hour water supply with overhead tank.</li>
                  
                 </ul>
@@ -35,7 +35,7 @@ const Specification = () => {
              </div> 
              <div>
                 
-             </div>
+            
            
         </div>
         
