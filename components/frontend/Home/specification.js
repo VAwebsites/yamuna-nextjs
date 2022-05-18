@@ -9,12 +9,12 @@ const Specification = () => {
     <div className="block background-is-dark" id="about" style={{backgroundColor:"#BFB6A5"}}>
     <div className="container" id="pricing">
         <h2 style={{fontSize:'42px'}}>Specifications</h2>
-        <div style={{display:"flex", justifyContent:"center", alignItems:"center",gap:"50px"}}>
-                <div>
+        <div className='row'>
+                <div className='col-12 col-md-6'>
                         <img src="/img/specification.jpeg" style={{borderRadius:"1.3em"}}/>
                   </div>
 
-            <div data-scroll-reveal="enter left and move 20px" style={{margin:"auto"}}>
+            <div className='col-12 col-md-6'>
                 <ul style={{fontWeight:"600",fontSize:"1.3em",fontFamily:'Montserrat'}}>
                   <li>24-hour security with cctv surveillance.</li>
                   <li>Centralized sewage treatment plant (stp).</li>
@@ -33,9 +33,7 @@ const Specification = () => {
                   <i style={{marginRight:"0.5em"}} className="fa fa-download"></i> Download Brochure
                 </Button> */}
              </div> 
-             <div>
-                
-             </div>
+           
            
         </div>
         

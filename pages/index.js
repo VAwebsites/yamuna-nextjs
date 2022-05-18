@@ -33,7 +33,7 @@ export default function Home(props) {
       <ProjectHighlights settings={settings}/>
       <Clubhouse/>
       <Specification />
-      <HomeArticlesSection villas={villas} />
+      <HomeArticlesSection posts={villas} />
       <Amenities />
       <HomeGallery images={images} />
       <Banks settings={settings}/>
