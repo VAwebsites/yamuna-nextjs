@@ -1,7 +1,7 @@
 import FrontLayout from '../components/layout/FrontLayout'
 import { firebaseGetGalleryImagesForHome } from '../utilities/firebase/gallery';
 import { firebasePostsForHome } from '../utilities/firebase/getEntries';
-import {getBanks,getGalleryImages,getHomepageSettings,getVillas} from '../utilities/api';
+import {getNearByLocations,getBanks,getGalleryImages,getHomepageSettings,getVillas} from '../utilities/api';
 import Amenities from '../components/frontend/Home/Amenities';
 import FeaturedVideo from '../components/frontend/Home/FeaturedVideo'
 import HomeArticlesSection from '../components/frontend/Home/HomeArticlesSection'
@@ -24,6 +24,7 @@ export default function Home(props) {
   const settings = JSON.parse(props.settings);
   const villas = JSON.parse(props.villas);
   const banks = JSON.parse(props.banks);
+  const places = JSON.parse(props.places);
 
   
 
@@ -37,7 +38,7 @@ export default function Home(props) {
       <Amenities />
       <HomeGallery images={images} />
       <Banks settings={settings}/>
-      <NearByPlace />
+      <NearByPlace places={places}/>
       <FeaturedVideo settings={settings} />
 
     </FrontLayout>
@@ -50,6 +51,8 @@ export async function getServerSideProps (context){
   const settings = await getHomepageSettings();
   const villas = await getVillas();
   const banks = await getBanks();
+  const places = await getNearByLocations();
+
 
   const props = {
     // posts:[],
@@ -57,7 +60,8 @@ export async function getServerSideProps (context){
     images:[],
     settings:[],
     villas:[],
-    banks:[]
+    banks:[],
+    places:[]
   };
   if(villas){
     props.villas = JSON.stringify(villas);
@@ -76,6 +80,9 @@ export async function getServerSideProps (context){
   if(resImages){
     const images = JSON.stringify(resImages);
     props.images = images;
+  }
+  if(places){
+    props.places = JSON.stringify(places);
   }
   return {
     props

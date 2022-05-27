@@ -45,4 +45,8 @@ export const sendBrochureRequest = async(name,email,phone)=>{
 }
 
 
-
+export const getNearByLocations = async()=>{
+    const response = await fetch(`${url}/api/near-by-locations`)
+    const data = await response.json();
+    return data
+}
