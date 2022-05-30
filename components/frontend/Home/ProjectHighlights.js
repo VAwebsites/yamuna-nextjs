@@ -16,14 +16,14 @@ const ProjectHighlights = (props) => {
 	        <h2 className='text-center'>Project <span style={{color:"#f4bc1c"}}>Highlight</span></h2>
             <div className="row">
                 <div className="col-md-12 col-sm-12">
-                    <p className='project-description'>{ project_overview} </p>
+                    <p className=''>{ project_overview} </p>
                 </div>
                 <div className="col-md-6 col-sm-6">
-                    <p className='project-description'><strong>Project Type:</strong> {project_type}</p><br />
+                    <p className=''><strong>Project Type:</strong> {project_type}</p><br />
 
-                        <p className='project-description'><strong>Project Status:</strong> {project_status}</p><br />
+                        <p className=''><strong>Project Status:</strong> {project_status}</p><br />
                         
-                        <p className='project-description'>
+                        <p className=''>
                           <h4 className='mb-0 pb-0'><strong>Builder:</strong></h4>
                         Yamuna Homes & Design Pvt. Ltd.<br />
                         
