@@ -14,7 +14,7 @@ const Footer = (props) => {
     <div className="container">
     <Link href="/" >
       <a className="brand">
-        <Image src={props.settings.logo} width="150px" height="80%" alt="" />
+        <Image src={props.settings.logo} className="bg-white" width="150px" height="80%" alt="" />
       </a>
     </Link>
       <div className="row">
