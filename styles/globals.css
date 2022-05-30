@@ -159,3 +159,6 @@ text-transform: capitalize;
 }
 
 
+#homepage-banner{
+  transition: 3s;  
+}
