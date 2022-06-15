@@ -19,8 +19,8 @@ const Footer = (props) => {
     </Link>
       <div className="row">
         <div className="col-md-4 col-sm-12">
-        
-       {props.settings.footer_description}
+      <p className="text-justify">    {props.settings.footer_description}</p>
+   
 
        <div style={{marginTop:"1em", display:"flex", gap:"20px"}}>
        <img 
