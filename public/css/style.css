@@ -619,13 +619,13 @@ h2 {
   font-size: 30px;
   font-weight: bold;
   margin-top: 5px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 h3 {
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 h4 {
@@ -3175,7 +3175,7 @@ form .status i {
 
   h2 {
     font-size: 20px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
 
   h3 {
@@ -3621,4 +3621,8 @@ form .status i {
 
 .bg-white{
   background-color: white;
+}
+
+.map-section{
+  margin-top: 5rem;
 }

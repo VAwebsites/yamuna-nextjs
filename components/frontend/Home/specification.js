@@ -25,7 +25,7 @@ const Specification = () => {
                   <li>Informal playground with basketball & tennis courts.</li>
                   <li>Fully landscaped waterfront developed with jogging & bicycle tracks.</li>
                   <li>Green park with seating and other comforts.</li>
-                  <li>Wide asphalt  roads of imternational standards with beautiful street scape and storm water drains.</li>
+                  <li>Wide asphalt  roads of international standards with beautiful street scape and storm water drains.</li>
                   <li>24-hour water supply with overhead tank.</li>
                  
                 </ul>

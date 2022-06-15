@@ -7,8 +7,8 @@ import { Button, Card, SimpleGrid } from '@mantine/core';
 
 const HomeArticlesSection = (props) => {
   let villas = [];
-  if(props.villas){
-    villas = props.villas.data;
+  if(props.posts){
+    villas = props.posts.data;
   }
   return (
     
